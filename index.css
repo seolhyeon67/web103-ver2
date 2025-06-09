@@ -1,0 +1,85 @@
+* {
+    margin: 0px auto;
+    text-decoration: none;
+    list-style: none;
+    font-family: Verdana;
+}
+.header {
+    width:100%; display: block; background-color: white;
+}
+.header .innerbox {
+    position: relative; 
+    color: rgb(94, 94, 94); font-weight: bolder;
+    width: 1180px; height: 120px; 
+}
+h1 {
+    position: absolute; left: 10px; bottom: 15px;
+}
+.header ul {
+    position: absolute; display: flex;
+}
+ul.global {
+    right: 0px; bottom: 0px;
+    li {
+        font-size: 14px; padding: 15px 40px;
+        
+        a {
+            color: gray;
+
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+}
+ul.utility {
+    right: 30px; top: 20px;
+    li {
+        padding: 0px 10px;
+
+        a {
+            font-weight: 100; font-size: 11px;
+            color: grey;
+
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+}
+div.main {
+    width: 100%; height: 590px;
+    position: relative; background-image: url(./img/bg_main.png);
+
+    div {
+        width: 800px; height: 300px;
+        font-size: 25px;
+        top: 150px; left:0px; right:0px; 
+        position: absolute; color: white; 
+
+        p {
+            font-size: 80px; font-weight: bold;
+        }
+}
+}
+.section {
+    width: 1180px; height: 450px;
+    background-color: aqua;
+    >p {
+        background-color: beige;
+        font-weight: bold;
+        width: 1180px; line-height: 120px;
+        text-align: center;
+    }
+    >div {
+        display: flex;
+        font-size: 14px;
+        .article {
+            width: 230px;
+            p {
+                font-weight: bold; padding: 10px 0px; font-size: 17px;
+            }
+        }
+    }
+}
+
