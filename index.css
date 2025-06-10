@@ -24,7 +24,7 @@ ul.global {
         font-size: 14px; padding: 15px 40px;
         
         a {
-            color: gray;
+            color: rgb(104, 103, 103);
 
             &:hover {
                 color: blue;

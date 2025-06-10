@@ -1,0 +1,89 @@
+* {
+    margin: 0px auto;
+    text-decoration: none;
+    list-style: none;
+    font-family: Verdana;
+}
+.header {
+    position: fixed; 
+    width:100%; display: block; background-color: white;
+}
+.header .innerbox {
+    position: relative; 
+    color: rgb(94, 94, 94); font-weight: bolder;
+    width: 1180px; height: 120px; 
+}
+h1 {
+    position: absolute; left: 10px; bottom: 15px;
+}
+.innerbox ul {
+    position: absolute; display: flex;
+}
+ul.global {
+    right: 0px; bottom: 0px;
+    li {
+        font-size: 14px; padding: 15px 40px;
+        
+        a {
+            color: rgb(104, 103, 103);
+
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+}
+ul.utility {
+    right: 30px; top: 20px;
+    li {
+        padding: 0px 10px;
+
+        a {
+            font-weight: 100; font-size: 11px;
+            color: grey;
+
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+}
+.section {
+    width: 1000px; padding-top: 120px;
+    div {
+        float: left;
+        p{
+        }
+    }
+    .article1 {
+        width: 700px; height: 400px; background-image: url(./img/700x400.png);
+    }
+    .article2 {
+        width: 290px; height: 190px; background-image: url(./img/290x190.png);
+    }
+    .article3-1 {
+        width: 290px; height: 95px; background-image: url(./img/290x95-1.png);
+    }
+    .article3-2 {
+        width: 290px; height: 95px; background-image: url(./img/290x95-2.png);
+    }
+    .article2, .article3-1, .article3-2, .article5 {
+        margin-left: 10px;
+    }
+    
+    .article3-1, .article3-2, .article4>div, .article5, .article6, .article7{ 
+        margin-top: 10px;
+    }
+    .article4 {
+        width: 490px;
+        .article4-1 {
+            width: 490px; height: 240px; background-image: url(./img/490x240-1.png);
+        }
+        .article4-2 {
+            width: 490px; height: 240px; background-image: url(./img/490x240-2.png);
+        }
+    }
+    .article5 {
+        width: 500px; height: 490px; background-image: url(./img/500x490.png);
+    }
+}
