@@ -52,8 +52,6 @@ ul.utility {
     width: 1000px; padding-top: 120px;
     div {
         float: left;
-        p{
-        }
     }
     .article1 {
         width: 700px; height: 400px; background-image: url(./img/700x400.png);
