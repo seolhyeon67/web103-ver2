@@ -15,7 +15,7 @@
 h1 {
     position: absolute; left: 10px; bottom: 15px;
 }
-.header ul {
+.innerbox ul {
     position: absolute; display: flex;
 }
 ul.global {
@@ -81,19 +81,37 @@ div.main {
     }
 }
 div.footer {
+    color: rgb(94, 94, 94);
     width: 100%;
+    background-color: #222035;
     .innerbox {
-        background-color: aqua;
         width: 1000px; height: 100px;
 
-        ul {
-            font-size: 14px; font-weight: bold;
-            display: flex; right: 20px; bottom: 15px;
-            font-weight: 100;
+        ul.footermenu {
+            font-size: 15px; 
+            right: 20px; bottom: 15px;
+            font-weight: 100; 
 
             li {
-                padding: 0px 10px; line-height: 14px;
+                padding: 0px 20px; line-height: 15px;
+                a {
+                    color: rgb(94, 94, 94);
+                    &:hover {
+                        color: blue;
+                    }
+                }
+                &:nth-child(-n+3) {
+                    border-right: 1px solid;
+                }
             }
+        }
+
+    }
+    .address {
+        padding: 10px 0px;
+        width: 1000px;
+        p {
+            font-size: 12px; padding: 3px; margin-left: 10px; 
         }
     }
 }
