@@ -64,9 +64,7 @@ div.main {
 }
 .section {
     width: 1180px; height: 450px;
-    background-color: aqua;
     >p {
-        background-color: beige;
         font-weight: bold;
         width: 1180px; line-height: 120px;
         text-align: center;
@@ -79,6 +77,18 @@ div.main {
             p {
                 font-weight: bold; padding: 10px 0px; font-size: 17px;
             }
+        }
+    }
+}
+div.footer {
+    width: 100%;
+    .innerbox {
+        background-color: aqua;
+        width: 1000px; height: 100px;
+
+        ul {
+            display: flex; right: 20px; bottom: 15px;
+            font-weight: 100;
         }
     }
 }
