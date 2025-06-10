@@ -86,7 +86,7 @@ div.footer {
     background-color: #222035;
     .innerbox {
         width: 1000px; height: 100px;
-
+        position: relative;
         ul.footermenu {
             font-size: 15px; 
             right: 20px; bottom: 15px;
