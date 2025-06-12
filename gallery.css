@@ -5,7 +5,7 @@
     font-family: Verdana;
 }
 .header {
-    position: fixed; 
+    position: fixed; z-index: 2;
     width:100%; display: block; background-color: white;
 }
 .header .innerbox {
@@ -51,16 +51,31 @@ ul.utility {
 .section {
     width: 1000px; padding-top: 120px;
     div {
-        float: left;
+        float: left; position: relative;
+        p, t {
+            position: absolute; color: white; font-weight: bold;
+            t {
+                position: static; font-size: 30px;
+            }
+        }
     }
     .article1 {
         width: 700px; height: 400px; background-image: url(./img/700x400.png);
+        p {
+            right: 10px; bottom: 10px; font-size: 30px;
+        }
     }
     .article2 {
         width: 290px; height: 190px; background-image: url(./img/290x190.png);
+        p {
+            top: 50px; left: 10px; font-size: 20px;
+        }
     }
     .article3-1 {
         width: 290px; height: 95px; background-image: url(./img/290x95-1.png);
+        p {
+            right: 10px; bottom: 20px; font-size: 20px;
+        }
     }
     .article3-2 {
         width: 290px; height: 95px; background-image: url(./img/290x95-2.png);
@@ -76,12 +91,31 @@ ul.utility {
         width: 490px;
         .article4-1 {
             width: 490px; height: 240px; background-image: url(./img/490x240-1.png);
+            p {
+                width: 300px; top: 160px; left: 0px; right: 0px; color: black; font-weight: 100;
+            }
         }
         .article4-2 {
             width: 490px; height: 240px; background-image: url(./img/490x240-2.png);
+            p {
+                right: 20px; bottom: 30px; font-size: 30px; color: gold;
+            }    
         }
     }
     .article5 {
         width: 500px; height: 490px; background-image: url(./img/500x490.png);
+    }
+    .article6 {
+        width: 1000px; height: 371px; background-image: url(./img/1000x371.png);
+        p {
+            font-size: 50px; line-height: 371px; width: 1000px; text-align: center;
+            text-shadow: 1px 1px black;
+        }
+    }
+    .article7 {
+        width: 1000px; height: 361px; background-image: url(./img/1000x361.png);
+        p {
+            width: 450px; height: 150px; right: 30px; bottom: 40px; font-size: 20px; font-weight: 100;
+        }
     }
 }
